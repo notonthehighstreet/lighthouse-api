@@ -1,8 +1,9 @@
-require 'active_support/core_ext/module/attr_accessor_with_default'
-
 module Lighthouse
   class Tag < String
-    attr_accessor_with_default :prefix_options, {}
+    attr_accessor :prefix_options
+    def prefix_options
+      @prefix_options ||= {}
+    end
     attr_accessor :project_id
 
     def initialize(s, project_id)
