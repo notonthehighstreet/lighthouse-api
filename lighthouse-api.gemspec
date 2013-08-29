@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.description = %q{Ruby API wrapper for Lighthouse - http://lighthouseapp.com}
   s.test_files = []
 
-  s.add_dependency(%q<activesupport>, [">= 3.0.0"])
-  s.add_dependency(%q<activeresource>, [">= 3.0.0"])
+  s.add_dependency(%q<activesupport>, [">= 3.0.0", "< 4.0.0"])
+  s.add_dependency(%q<activeresource>, [">= 3.0.0", "< 4.0.0"])
 end
